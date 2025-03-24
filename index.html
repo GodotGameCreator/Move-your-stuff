@@ -1,3 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sellyourstuff.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <style>
+          .h1{
+            text-align:center;
+        }
+
+        @media (max-width: 768px) {
+          /* Styles for small screens */
+        }
+        @media (min-width: 769px) {
+          /* Styles for larger screens */
+        }
+            h1 {
+            color:black;
+        }
+        
+        h2 {
+            color:rgb(27, 133, 71);
+        }
+         
+         body {
+             background-color:wheat;
+         }
+         
+         #eight {
+             color:rgb(170, 217, 0);
+         }
+          
+         #we-copywrighted-this-name {
+             background-color:rgb(255, 0, 17);
+         }
+            
+          #sell-est {
+             background-color:rgb(173, 7, 18);
+            font-weight: bold;
+            text-decoration: underline;
+         }
+        
+        .li {
+            background-color:rgb(0, 255, 187);
+            font-family:cursive;
+        }
+        
+        #song {
+             color:teal;
+            font-family: fantasy;
+            font-size: 13px;
+            font-style: italic;
+            line-height: 1.5em;
+            text-align: center;
+         }
+         
+         
+         
+         #stuff {
+             color:azure;
+         }
+         
+         #stuff {
+             background-color:green;
+              font-size:10px;
+              text-align:center;
+            
+         }
+        
+        .whaa {
+             background-color:orange;
+             text-align: center;
+         }
+        
+        
+        .pet-movers { 
+             background-color:purple;
+            font-family: cursive;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.5em;
+            text-align: center;
+         }
+         
+        .r {
+            color:blue;
+        }
+         
+         #two-cats{
+             width:170px;
+             height:170px;
+         }
+         
+         #pic-cat-box{
+             width:130px;
+             height:130px;
+         }
+         
+         #pic-cat-box-two{
+             width:456px;
+             height:407px;
+         }
+
+        /* Create a dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:rgba(0, 0, 0, 0.5);
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+                /* Sticky navbar style */
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background image for the navbar */
+        body {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Create a translucent navbar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for transparency */
+            padding: 10px 0; /* Add some padding for spacing */      
+        }
+        
+        /* Style the navigation links */
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav  a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Add hover effect to the links */
+        nav:hover {
+            color: #f8f8f8;
+        }
+
+/* styles.css */
+.sticky {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for transparency */
+            padding: 10px 0; /* Add some padding for spacing */      
+}
+
+.sticky a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+    </style>
+</head>
+<body>
+     <nav class="sticky">
+        <div class="navbar-left">
+        <img src="favicon.png" alt="favicon aka logo on navbar" width="40">
+        </div>
+        <div class="navbar-centered">
+            <a href="#we-copywrighted-this-name">Home</a>
+                        <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#we-copywrighted-this-name">Selling your stuff</a>
+                    <a href="#moving">Moving your stuff</a>
+                </div>
+            </li>
+            <a href="#dawg">Game</a>
+            <a href="#songsandreasons">Song</a>
+            <a href="#eight">About</a>
+        </div>
+    </nav>
+    
     <p id = "moving">
         <h3 id = "sell-est">NowMovingyourstuff © est. 2024</h3>
         <h1 id = "we-copywrighted-this-name">Need a moving company?</h1>
@@ -78,3 +290,43 @@
                     
                 </tbody>
             </table>
+
+                <title id = "game">Guess the Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>Guess the Number Game</h1>
+    <p>Try to guess the secret number between 1 and 100:</p>
+    <input type="number" id="userGuess" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+
+
+<script>function checkGuess() {
+    const userGuess = parseInt(document.getElementById('userGuess').value);
+    const resultElement = document.getElementById('result');
+
+    if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+        resultElement.textContent = 'Please enter a valid number between 1 and 100.';
+    } else if (userGuess === 5) {
+        resultElement.textContent = 'Congratulations! You guessed the correct number!';
+    } else if (userGuess < 5) {
+        resultElement.textContent = 'Try a higher number.';
+    } else {
+        resultElement.textContent = 'Try a lower number.';
+    }
+}
+</script>
+
+            <br><br><a href= "https://godotgamecreator.github.io/Sell-your-stuff/#we-copywrighted-this-name">Sellingyourstuff</a>
+
+
+<footer>
+    <ul>
+        <p><a href="#privacy">Privacy Policy</a></p>
+        <p><a href="#terms">Terms of Service</a></p>
+        <p><a href="#contact">Contact</a></p>
+    </ul>
+    
+</footer>
+</body>
+</html>
